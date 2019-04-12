@@ -12,10 +12,13 @@
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{xcolor}
 
-%% Altered from a tex.stackoverflow.com answer to make smaller circles
+%% Altered from a tex.stackoverflow.com answer to make smaller numbers
+%% in smaller circles
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-    \node[shape=circle,draw,inner sep=1pt] (char) { #1};}}
+    \node[shape=circle,draw,inner sep=0.15pt] (char) {\footnotesize#1};}}
 
 \newcommand*\sectline{
   \vspace{5pt}
@@ -24,6 +27,8 @@
   \end{center}
   \vspace{5pt}
 }
+
+\hypersetup{}
 
 \begin{document}
 
@@ -826,7 +831,7 @@ the nail must be on the plywood side to clamp it to the member!
 The pine members concentrate the strength of the plywood, allowing
 fittings to be attached to the corners of the box where the plywood
 alone would have only a weak local resistance
-(\textit{Fig. \ref{fig:fifteen}}). These corners are extremely strong nodes which
+\textit{(Fig. \ref{fig:fifteen})}. These corners are extremely strong nodes which
 will form hard points for fittings.
 
 The longerons behind the cabin extend its solidity to the rear, and
@@ -946,10 +951,10 @@ I must emphasize: wherever wood touches wood, you must glue and nail.
 In a sheet of 1mm soft steel, cut two strips \circled{29} and
 \circled{30}, which, when bent, will be held in place by gluing under
 the lower ends of members 15 and 16 a pad, \circled{31}
-(fig. \ref{fig:twenty}) of hardwood --- walnut, oak, beech, etc. ---
-$20\times26\times230$.  Only drill one side of these fittings for now.
-The other side will be drilled later when it is bound or clamped in
-place.
+\textit{(fig. \ref{fig:twenty})} of hardwood --- walnut, oak, beech,
+etc. --- $20\times26\times230$.  Only drill one side of these fittings
+for now.  The other side will be drilled later when it is bound or
+clamped in place.
 
 The bolts \circled{32} of $5\times60$ threaded rod will further secure
 the flanges \circled{33} of 20x20, which will be inside the fuselage.
@@ -999,12 +1004,12 @@ member \circled{18}.  Then add cross-member \circled{46}, beveled to
 be flush with the underside of longeron \circled{12}.
 
 The front flanges \circled{33} are now joined by the panel
-\circled{47} (fig. \ref{fig:twentyfour}, cut so that its cross member
-\circled{48} fits on the shim \circled{35}, and its crosspiece
-\circled{49} at the bottom of the tabs \circled{33} so that cross
-members and flanges are flush with the longerons \circled{12}.  The
-height of the panel \circled{47} will be determined in place.  Do not
-forget that the hole \circled{50} is reinforced with a ring.  File
+\circled{47} \textit{(fig. \ref{fig:twentyfour})}, cut so that its
+cross member \circled{48} fits on the shim \circled{35}, and its
+crosspiece \circled{49} at the bottom of the tabs \circled{33} so that
+cross members and flanges are flush with the longerons \circled{12}.
+The height of the panel \circled{47} will be determined in place.  Do
+not forget that the hole \circled{50} is reinforced with a ring.  File
 away what could interfere with the flanges \circled{29}.
 
 \begin{figure}
@@ -1048,7 +1053,7 @@ threads with beeswax.
 
 The two ends of the flanks are brought together by a ``lyre''
 \circled{50} cut with a saw from a 20mm hardwood plank
-(fig. \ref{fig:twentyseven}).
+\textit{(fig. \ref{fig:twentyseven})}.
 
 \begin{figure}
   \includegraphics[width=\linewidth]{fig-27.jpg}
@@ -1479,10 +1484,10 @@ We would also need a spherical tailwheel 140mm in diameter.
 
 A tube \circled{163} \textit{(fig. \ref{fig:thirtynine})} passes
 straight through the fuselage below the rectangular hole 26
-(Fig. 51\footnote{This figure does not contain any such hole.}).  You
-will have to use a brace and bit to drill a hole \circled{164} as seen
-at \circled{165}, and use a rasp to fit it to the diameter of the
-tube, \textit{i.e.} 24mm.
+\textit{(Fig. 51}\footnote{This figure does not contain any such
+  hole.}).  You will have to use a brace and bit to drill a hole
+\circled{164} as seen at \circled{165}, and use a rasp to fit it to
+the diameter of the tube, \textit{i.e.} 24mm.
 
 The middle of the tube \circled{163} is held between two wedges
 \circled{166}, surrounded by two cheeks \circled{167} of 2mm steel,
@@ -1531,7 +1536,7 @@ bracket \circled{183} on the other, and a $5\times25$ screw
 with the base of the handle.
 
 Finally, the double strand will join the turnbuckle \circled{122}
-\textit{(fig. \ref{fig:thirtyfivw})} where it is attached by a cable
+\textit{(fig. \ref{fig:thirtyfive})} where it is attached by a cable
 clamp \circled{123} designed for 4.5mm cable.  Tie each loose end and
 join them both to the cable.  Leave 50---100mm excess.
 
@@ -1858,7 +1863,7 @@ shape of the thicknesses of the wing: the airfoil.
 
 Two cap strips \circled{222}, \circled{223} in 6$\times$12 are held
 along the broken line with 2mm nails whose heads you have cut off.
-The rounded leading edge and is cut from a 12mm-thick board.
+The rounded leading edge is cut from a 12mm-thick board.
 
 350mm back from the leading edge, mark a line
 \circled{224}\footnote{Which is not numbered on the diagram but can be
@@ -1979,13 +1984,13 @@ them.
 
 A 6$\times$12 strip is laid from end to end in the notches
 \circled{244} cut under the nose of each rib.  Pieces of 6$\times$12
-strip are then placed on edge \circled{230}\footote{This refers to
+strip are then placed on edge \circled{230}\footnote{This refers to
   \circled{230} at the bottom of Figure \ref{fig:fortysix}, not the
   one at the top.} between each pair of ribs along the front of the
 spar.  Then wrap the rounded top of the ribs with 1.5mm plywood, the
 grain of which should run along the wingspan, gluing from
 \circled{230} to \circled{244}.  It is wise to only cover one bay
-(\textit{i.e.} 300mm) at a time, either butting the plywood sheets at
+\textit{(i.e.} 300mm) at a time, either butting the plywood sheets at
 the middle of each rib, which gives 6mm gluing area for each, or by
 overlapping slightly beveled edges; \textit{i.e.} a scarf joint.  This
 covering must be very firmly bonded, so we advise against covering
@@ -2085,7 +2090,7 @@ completely (5 or 6 hours).
 \subsection{Varnishing}
 
 Choose a warm, dry, sunny day.  Work outside, in the shade, in the
-afternoon.  Put the 20L can of cellulose acetate on a char.  Fill a
+afternoon.  Put the 20L can of cellulose acetate on a chair.  Fill a
 small pot of this varnish, and loading the 60mm fishtail brush, apply
 the coating by wetting the canvas so it becomes translucent.  Spread
 the excess around with additional brush strokes.
@@ -2543,7 +2548,7 @@ It is necessary to define our situation.
 
 According to the letters I got about the HM.8, and my own
 tribulations, it appears that all engines of good manufacture are
-about equal, from 500cm\textsuperscript{3}.
+about equal, over about 500cm\textsuperscript{3}.
 
 Among the old two-cylinder V's, Harley and Indian are second-bests.
 They cannot be inverted.  Harley is the most serious.
@@ -2646,7 +2651,7 @@ The crankcase mounting flanges will be tightened by bolts (10mm
 threaded rods in the case of the 540cc Aubier and Dunne, which we will
 take here as an example) between the flanges \circled{267} made of 2mm
 sheet metal (\textit {figures \ref{fig:fiftyseven},
-  \ref{fig:fiftyeight}}). Ensure that the ears \circled{268} are
+  \ref{fig:fiftyeight})}. Ensure that the ears \circled{268} are
 parallel.
 
 \begin{figure}
@@ -2707,5 +2712,150 @@ rigidly to the fitting \circled{266}.
 
 The piece at \circled{263} is the old support for the 540cc Aubier and
 Dunne, inverted and fastened to the two rear breech bolts.
-  
+
+\section{Propeller shaft}
+
+At what speed does this used engine you found normally run?  Would it
+work to just stick a propeller on it, direct-drive?  Has the pull of a
+propeller been planned on its bearings?  Of course not.
+
+It's much easier to use the propeller made by the book by powering it
+like a motorcycle wheel, using a reduction drive whose ratio will be
+determined empirically, without risking damaging the engine.
+
+\textit{M. Mignet goes on to give details of a straightforward but
+  ultimately terrifying reduction drive that he hopes might go 12
+  hours between failures.}
+
+\chapter{Pou-du-Ciel 1936: Centering and Balance}
+
+Behold the most important chapter of the book!  To build a Pou-du-Ciel
+is futile unless you observe the following instructions --- unless you
+propose to kill yourself.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{fig-78.jpg}
+  \caption{Arrangement of bracing wires}
+  \label{fig:seventyeight}
+\end{figure}
+
+The center of gravity of the machine must be located somewhere on the
+vertical of the resultant thrust\footnote{This wording,
+  \textit{pouss\'ee r\'esultante}, is unclear.} of the two wings when
+the aircraft is in a level flying attitude.
+
+If the center of gravity be considered static, the correct balance
+will be obtained by advancing or moving back the front wing.
+
+We begin by mounting the two wings, which both pivot in opposite
+directions, the rear wing being fixed in its final location.
+
+\sectline
+
+\section{Wing Bracing}
+
+\circled{363} in figure \ref{fig:seventyeight} shows the plan and
+layout of the bracing wires, which are triangulated tetrahedrally
+\textit{(fig. \ref{fig:seventynine}}, \circled{364}), so as to be
+dimensionally stable in tension.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{fig-79.jpg}
+  \caption{Tetrahedral bracing}
+  \label{fig:seventynine}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{fig-80.jpg}
+  \caption{Details of bracing}
+  \label{fig:eighty}
+\end{figure}
+
+\section{Rear wing}
+
+A threaded rod \circled{197}, 200mm long, secures the U-fitting
+\circled{198}/\circled{199} under the middle of the front spar of the
+rear wing.  The fittings \textbf{B} fixed by the two bolts
+\circled{365} have been cut and bent so that their eyes, by which the
+stay cables are attached, are aligned with the axis of the pivot
+attachment \circled{195}, as shown in exaggerated form at
+\circled{368}.  With a tautened wire, it is easy to determine the
+height \circled{369} \textit{(fig. \ref{fig:eightyone})}.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{fig-81.jpg}
+  \caption{Layout of front-wing bracing}
+  \label{fig:eightyone}
+\end{figure}
+
+The axis of rotation \circled{195} for the rear wing is held between
+two brackets \circled{188}, which are fixed to cross-member
+\circled{85} of the fuselage by two 6mm bolts
+\textit{(fig. \ref{fig:eightytwo})}.
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{fig-82.jpg}
+  \caption{Rear-wing pivot}
+  \label{fig:eightytwo}
+\end{figure}
+
+The fittings \textbf{C} are fastened with 5mm bolts under the fuselage
+where the 20$\times$20 members are reinforced with hardwood
+\circled{37}.  Connect them with strip of sheet metal 1mm$\times$20mm.
+
+Attach the rear wing to its pivot, using a 7mm bolt through the tube
+\circled{195}.  Temporarily fasten the 1.5mm wire from \textbf{B} to
+\textbf{C} so the wing is held horizontal, with its tips equidistant
+from the front point of the fuselage as verified with string.
+
+\section{Front wing}
+
+The top of the cabane is held in place by the tube \circled{194},
+fastened at the other end to the engine, so that a plumb-bob from the
+axis of the pivot \circled{195} falls 123cm ahead of the nose of the
+rear wing, with the fuselage supported so the top of the turtledeck
+makes a 6\textsuperscript{o} angle from the horizontal.  (See
+\textit{fig. \ref{fig:eightythree}} for a complete diagram of the
+centering.)
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{fig-83.jpg}
+  \caption{Centering}
+  \label{fig:eightythree}
+\end{figure}
+
+The front wing should be placed on its pivot and braced like the rear
+wing: perfectly horizontal, with its tips equidistant from the tips of
+the rear wing.
+
+\section{Bracing wires}
+
+At this point you may determine the precise lengths \textbf{AB},
+\textbf{BC}, \textbf{CD}, and \textbf{DE} between the holes in the
+fittings, so you can prepare the final guy wires as shown in detail
+\circled{370}.
+
+Everywhere there are 5mm rods, 5mm cables.  It is clearly
+unnecessarily solid in some respects, but hardly heavier --- and it's
+probably best that the Pou-du-Ciel not fall apart in the air!
+
+When the fitting \textbf{B} is removed, prevent the wing from falling
+by placing a support under the opposite side so that the wires on that
+side are tautened.
+
+Install the eyelets as at \circled{371}.
+
+Stop-wire the turnbuckles with a 1mm wire \circled{373} wound 5 times
+at each end after passing it through the eyes and clevises.  The axes
+of tensioners and links will be immobilized by pins \circled{374} of
+1mm steel wire.
+
+Before cutting the cables, tie in strong wire on both sides of the
+cut, about 6 or 7mm.  Cut with a blow from a hammer on a cold chisel,
+holding the cable against a sheet of steel plate.
+
+Bind all cable ends that extend beyond 
+
+%% Ligaturez tous les bouts de câbles dépassant des serre-câbles (de 10 cm) afin de ne pas vous piquer les doigts.  Laissez les câbles détortillés aux gens sales et désordonnés.
+
 \end{document}
